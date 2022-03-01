@@ -2,9 +2,7 @@ package com.example.core;
 
 import com.example.model.Fachverfahren;
 import com.example.model.ITVerfahren;
-import org.springframework.stereotype.Component;
 
-@Component
 public class Manager {
 
     public String getVerfahrensliste() {
@@ -42,7 +40,7 @@ public class Manager {
     public String postITVerfahren(int fachverfahrensId, ITVerfahren itVerfahren) {
         return "NOT YET IMPLEMENTED";
     }
-    
+
     public void deleteITVerfahren(int fachverfahrenId, int itVerfahrensId) {
         System.err.println("NOT YET IMPLEMENTED");
     }

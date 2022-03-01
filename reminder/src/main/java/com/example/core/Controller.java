@@ -2,7 +2,6 @@ package com.example.core;
 
 import com.example.model.Fachverfahren;
 import com.example.model.ITVerfahren;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
