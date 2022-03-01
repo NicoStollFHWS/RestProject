@@ -1,4 +1,4 @@
-package com.example.reminder;
+package com.example.core;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
