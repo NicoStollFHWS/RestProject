@@ -1,16 +1,21 @@
 package com.example.core;
 
+import com.example.dao.Repository;
 import com.example.model.Fachverfahren;
 import com.example.model.ITVerfahren;
+import com.google.gson.Gson;
 
 public class Manager {
 
+    Repository repos = new Repository();
+    Gson gson = new Gson();
+
     public String getVerfahrensliste() {
-        return "NOT YET IMPLEMENTED";
+        return gson.toJson(repos.getVerfahrensliste());
     }
 
     public String getAllFachverfahren() {
-        return "NOT YET IMPLEMENTED";
+        return gson.toJson(repos.getAllFachverfahren());
     }
 
     public String getFachverfahren(int id) {
@@ -30,11 +35,11 @@ public class Manager {
     }
 
     public String getAllITVerfahren(int fachverfahrensId) {
-        return "NOT YET IMPLEMENTED";
+        return gson.toJson(repos.getAllItVerfahren(fachverfahrensId));
     }
 
     public String getITVerfahren(int fachverfahrensId, int itVerfahrenId) {
-        return "NOT YET IMPLEMENTED";
+        return gson.toJson(repos.getItVerfahren(fachverfahrensId, itVerfahrenId));
     }
 
     public String postITVerfahren(int fachverfahrensId, ITVerfahren itVerfahren) {

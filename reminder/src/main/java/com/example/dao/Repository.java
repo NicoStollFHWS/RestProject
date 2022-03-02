@@ -1,6 +1,12 @@
 package com.example.dao;
 
-import java.sql.Connection;
+import com.example.model.Fachverfahren;
+import com.example.model.ITVerfahren;
+import com.example.model.Verfahrensliste;
+
+import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Repository {
 

@@ -20,6 +20,10 @@ public class Verfahrensliste {
         return fachverfahren;
     }
 
+    public void addFachverfahren(Fachverfahren fachverfahren) {
+        this.fachverfahren.add(fachverfahren);
+    }
+
     public void setFachverfahren(List<Fachverfahren> fachverfahren) {
         this.fachverfahren = fachverfahren;
     }
