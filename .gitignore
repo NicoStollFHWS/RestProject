@@ -18,6 +18,7 @@ reminder/target/
 *.iws
 *.iml
 *.ipr
+!/reminder/reminder.iml
 
 ### NetBeans ###
 /nbproject/private/
