@@ -1,6 +1,6 @@
 HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
+reminder/target/
+!/reminder/.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -33,5 +33,6 @@ build/
 .vscode/
 
 ## Datenbank ##
-../verfahrensliste/
-../derby.log
+/verfahrensliste/
+/derby.log
+
