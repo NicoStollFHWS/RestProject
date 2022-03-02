@@ -50,10 +50,11 @@ public class CreateDB {
 
             this.conn.commit();
 
-
         } catch (SQLException ex) {
-            System.out.println("in connection" + ex);
+            System.out.println("in connection " + ex);
         }
+
+        dummyData();
     }
 
     public void shutDown() {
@@ -90,12 +91,16 @@ public class CreateDB {
             pstmt.setInt(5, 1);
             pstmt.executeUpdate();
 
-            rs = stmt.executeQuery("select * from itverfahren");
+            rs = stmt.executeQuery(
+                        "SELECT * "
+                            + "FROM itverfahren "
+                            + "JOIN fachverfahren on fachverfahren.id = itverfahren.fachverfahrenId");
             while (rs.next()) {
-                System.out.printf("%d %s %s %s %s %s\n",
+                System.out.printf("%d %s %s %s %s %s %s %s\n",
                         rs.getInt(1), rs.getString(2),
                         rs.getString(3), rs.getString(4),
-                        rs.getString(5), rs.getString(6));
+                        rs.getString(5), rs.getString(6),
+                        rs.getString(7), rs.getString(8));
             }
 
         } catch (SQLException e) {
