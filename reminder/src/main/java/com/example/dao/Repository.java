@@ -56,9 +56,8 @@ public class Repository {
      * @return List<ITVerfahren>
      */
     public List<ITVerfahren> getAllItVerfahren(int fachverfahrenId) {
-        String getSQL = "SELECT * FROM fachverfahren f " +
-                "JOIN itverfahren i on f.id = i.fachverfahrenId " +
-                "WHERE f.id = " + fachverfahrenId;
+        String getSQL = "SELECT * FROM itverfahren i " +
+                "WHERE i.fachverfahrenId = " + fachverfahrenId;
 
         List<ITVerfahren> itVerfahren = new ArrayList<>();
 
